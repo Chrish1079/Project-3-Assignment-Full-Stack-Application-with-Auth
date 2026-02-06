@@ -28,7 +28,7 @@ const Login = () => {
     const result = await login(formData.username, formData.password);
 
     if (result.success) {
-      navigate('/notes');
+      navigate('/loadouts');
     } else {
       setError(result.error);
       setLoading(false);
